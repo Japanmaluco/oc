@@ -3,10 +3,10 @@ require('@nomiclabs/hardhat-waffle')
 
 module.exports = {
   solidity: '0.8.4',
-  defaultNetwork: 'hardhat',
+  defaultNetwork: 'testnet',
   networks: {
     hardhat: {
-      chainId: 1337,
+      chainId: 4002,
       forking: {
         url: process.env.NETWORK_RPC,
         blockNumber: 24066833,
