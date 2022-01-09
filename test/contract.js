@@ -10,7 +10,7 @@ describe('Fantom Octopups contract', function () {
 
   it('should minted a octopup', async function () {
     const initialBalance = await depositAddress.getBalance()
-    const Contract = await ethers.getContractFactory('FantomOctopups')
+    const Contract = await ethers.getContractFactory('FatNFT')
     const contract = await Contract.deploy()
 
     await contract.setDepositAddress(await depositAddress.getAddress())
@@ -24,7 +24,7 @@ describe('Fantom Octopups contract', function () {
   })
 
   it('should not be minted because invalid amount', async function () {
-    const Contract = await ethers.getContractFactory('FantomOctopups')
+    const Contract = await ethers.getContractFactory('FatNFT')
     const contract = await Contract.deploy()
 
     const receipt = await contract
@@ -36,7 +36,7 @@ describe('Fantom Octopups contract', function () {
   })
 
   it('should not reserve octopups', async function () {
-    const Contract = await ethers.getContractFactory('FantomOctopups')
+    const Contract = await ethers.getContractFactory('FatNFT')
     const contract = await Contract.deploy()
 
     const receipt = await contract

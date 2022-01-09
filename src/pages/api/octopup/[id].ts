@@ -4,7 +4,7 @@ import { NextApiRequest, NextApiResponse } from 'next'
 import Cors from 'cors'
 import * as ethers from 'ethers'
 
-import _contract from '../../../../artifacts/contracts/FantomOctopups.sol/FantomOctopups.json'
+import _contract from '../../../../artifacts/contracts/FantomOctopups.sol/FatNFT.json'
 
 const {
   NETWORK_RPC,

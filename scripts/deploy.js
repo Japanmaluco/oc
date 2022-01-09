@@ -1,5 +1,5 @@
 const main = async () => {
-  const NFT = await ethers.getContractFactory('FantomOctopups')
+  const NFT = await ethers.getContractFactory('FatNFT')
   const nft = await NFT.deploy()
 
   console.log(`Contract deployed to address: ${nft.address}`)

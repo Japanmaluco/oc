@@ -6,7 +6,7 @@ import { ChangeEvent, useState, useRef, useEffect } from 'react'
 import * as ethers from 'ethers'
 import { toast } from 'react-toastify'
 
-import Contract from '../../artifacts/contracts/FantomOctopups.sol/FantomOctopups.json'
+import Contract from '../../artifacts/contracts/FantomOctopups.sol/FatNFT.json'
 
 const CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS as string
 const NETWORK_CHAINID = process.env.NEXT_PUBLIC_NETWORK_CHAINID as string
